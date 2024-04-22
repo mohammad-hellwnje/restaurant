@@ -230,7 +230,7 @@ nav div ul li a:hover::before {
 }
 .div6 input {
     padding: 10px;
-    width: 80%;
+    width: 70%;
     margin-right: 6px;
 }
 .div6 button {
@@ -239,7 +239,6 @@ nav div ul li a:hover::before {
     color: white;
     cursor: pointer;
     padding: 10px;
-
 }
 .div7 .div3 ul {
     list-style: none;
@@ -259,6 +258,9 @@ nav div ul li a:hover::before {
  @media (max-width:1200px) {
     .aa {
         height: 845px;
+    }
+    .get4 {
+        display: none;
     }
 }
 @media (max-width:992px) {
@@ -286,6 +288,11 @@ nav div ul li a:hover::before {
         width: 60% !important;
     }
 }
+@media (min-width:768px) {
+    .get3 {
+        display: none;
+    }
+}
 @media (max-width:768px) {
     .header-width {
         width: 73% !important;
@@ -309,6 +316,9 @@ nav div ul li a:hover::before {
     }
     .get2 {
         display: block;
+    }
+    .get {
+        display: none;
     }
 
 }
