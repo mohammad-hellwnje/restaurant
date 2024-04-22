@@ -1,0 +1,319 @@
+
+nav div ul li a {
+    position: relative !important;
+}
+nav div ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(224, 72, 72);
+    opacity: 0;
+    transition: .6s;
+}
+nav div ul li a:hover::before {
+    opacity: 1;
+    transform: scaleX(-1);
+}
+.hero {
+    height: 100%;
+    padding-top: 111px;
+}
+.button {
+    border-top-right-radius:30px ;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius: 30px;
+    padding: 10px 30px;
+}
+.icons {
+    width: 3.4375rem;
+    height: 3.4375rem;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red 0 50%, transparent 50% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: relative;
+}
+.icons i {
+    z-index: 1;
+}
+.icons::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: inherit;
+}
+.icons i:hover {
+    color: red;
+    cursor: pointer;
+}
+.video-icon span:hover {
+    color: red;
+    cursor: pointer;
+}
+.header-width {
+    font-size: 37px;
+}
+.image {
+    position: relative;
+}
+.image .bg-img::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:66px ;
+    background-image: url(../assets/img/team-shape.svg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1 {
+    position: relative;
+    box-shadow: 3px 3px 15px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card1:hover  {
+    transform: scale(1.01);
+    transition: 0.5s;
+   
+}
+.card1:hover .social-box {
+    overflow: inherit; 
+    transform: translateX(-70px);
+}
+.card1 .image img {
+    border-radius: 20px;
+}
+.card1 .card-content {
+    padding: 1.5625rem;
+    padding-top: 0.625rem;
+}
+.card1 ul {
+    list-style: none;
+    background-color: #ffffff4d;
+    width: fit-content;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    position: absolute;
+    right: -60px;
+    top: 20px;
+    transition: 2s;
+}
+.card1 ul li i {
+    font-size: 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+.card1 ul li i:hover{
+    color: red;
+}
+@keyframes image {
+    0% {
+        transform: translate(1px,1px) rotate(0deg); 
+    }
+    10% {
+        transform: translate(-1px,-2px) rotate(-1deg); 
+    }
+    20% {
+        transform: translate(-3px,0px) rotate(1deg); 
+    }
+    30% {
+        transform: translate(3px,2px) rotate(0deg); 
+    }
+    40% {
+        transform: translate(1px,-1px) rotate(-1deg); 
+    }
+    50% {
+        transform: translate(-1px,2px) rotate(0deg); 
+    }
+    60% {
+        transform: translate(-3px,1px) rotate(-1deg); 
+    }
+    70% {
+        transform: translate(3px,1px) rotate(0deg); 
+    }
+    80% {
+        transform: translate(-1px,1px) rotate(-1deg); 
+    }
+    90% {
+        transform: translate(1px,2px) rotate(0deg); 
+    }
+    100% {
+        transform: translate(1px,-2px) rotate(-1deg); 
+    }
+
+}
+.hero img:hover {
+    animation: image 1s linear infinite;
+}
+.hero h2 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 4.0625rem;
+}
+.chef-p {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 3.125rem;
+}
+.aa {
+    height: 72.8125rem;
+}
+.main-container {
+    position: relative;
+    width: calc(calc(100% - 2rem * 2) / 3);
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+.main-container .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0 , 0, 0.75);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.main-container:hover .overlay {
+    height: 100%;
+}
+.info .icon-circl {
+    min-width: 3.125rem;
+    min-height: 3.125rem;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.info .icon-circl i {
+    color: white;
+}
+.info h3 {
+    color: #7d7d7d;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.info p {
+    margin: 0;
+}
+.info span {
+    color: black;
+    font-weight: 700;
+}
+.form {
+    box-shadow: 0 0 1.875rem #00000014;
+}
+.footer {
+    color: white;
+    background-image: url(../assets/img/textured-metal-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div5 i {
+    color: red;
+}
+.div6 input {
+    padding: 10px;
+    width: 80%;
+    margin-right: 6px;
+}
+.div6 button {
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+
+}
+.div7 .div3 ul {
+    list-style: none;
+}
+.div7 .div3 ul li:hover {
+    transform: translateX(8px);
+    background-color: #3f3e3e;
+}
+.get2 {
+    display: none;
+}
+@media (max-width:1400px) {
+    .aa {
+        height: 1000px;
+    }
+}
+ @media (max-width:1200px) {
+    .aa {
+        height: 845px;
+    }
+}
+@media (max-width:992px) {
+    .header-width {
+        width: 50% !important;
+    }
+    .paragraph-width {
+        width: 80% !important;
+    }
+    .button {
+        border-radius: 20px;
+    }
+    .main-container {
+        width: calc(calc(100% - 1.25rem) / 2);
+    }
+    .aa {
+        height: 1405px;
+    }
+}
+@media (min-width:992px) {
+    .header-width {
+        width: 65% !important;
+    }
+    .paragraph-width {
+        width: 60% !important;
+    }
+}
+@media (max-width:768px) {
+    .header-width {
+        width: 73% !important;
+    }
+    .main-container {
+        width: 100%;
+    }
+    .aa {
+        height:auto;
+    }
+    .div6  input {
+        width: 100%;
+        margin-bottom: 6px;
+        margin-right: 0;
+    }
+    .div6  button {
+        width: 100%;
+    }
+    .get1 {
+        display: none;
+    }
+    .get2 {
+        display: block;
+    }
+
+}
+@media (max-width:576px) {
+    .header-width {
+        width: 89% !important;
+    }
+}
