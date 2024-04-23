@@ -254,6 +254,7 @@ nav div ul li a:hover::before {
     .aa {
         height: 1000px;
     }
+
 }
  @media (max-width:1200px) {
     .aa {
@@ -320,6 +321,7 @@ nav div ul li a:hover::before {
     .get {
         display: none;
     }
+
 
 }
 @media (max-width:576px) {
